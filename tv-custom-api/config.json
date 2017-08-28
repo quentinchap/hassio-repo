@@ -32,8 +32,8 @@
             { "login": "str", "password": "str" }
         ],
         "channels": [{
-            "compatibleValue": "str",
-            "stdValue": "str"
+            "stdValue": "str",
+            "compatibleValue": ["str"]
         }]
     },
     "map": ["ssl:rw"],
