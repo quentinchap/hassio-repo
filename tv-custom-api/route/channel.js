@@ -50,11 +50,10 @@ router.post('/', function(req, res) {
 var getStdChaine = function(channel) {
     var lowerStr;
     var lowerChannel = channel.toLowerCase();
-    console.log(lowerChannel);
     for (let c of options.channels) {
-        console.log(c);
+        var channelTable = c.compatibleValue.split(",");
 
-        for (let str of c.compatibleValue) {
+        for (let str of channelTable) {
             lowerStr = str.toLowerCase();
             console.log(lowerStr);
             if (lowerChannel == lowerStr) {

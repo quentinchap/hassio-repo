@@ -15,11 +15,11 @@
         ],
         "channels": [{
                 "stdValue": "TF1",
-                "compatibleValue": ["1", "tf1", "tf 1"]
+                "compatibleValue": "1, tf1, tf 1"
             },
             {
                 "stdValue": "M6",
-                "compatibleValue": ["6", "m6", "m 6"]
+                "compatibleValue": "6, m6, m 6"
             }
         ]
     },
@@ -33,7 +33,7 @@
         ],
         "channels": [{
             "stdValue": "str",
-            "compatibleValue": ["str"]
+            "compatibleValue": "str"
         }]
     },
     "map": ["ssl:rw"],
