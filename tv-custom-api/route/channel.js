@@ -34,9 +34,7 @@ router.post('/', function(req, res) {
                 "source": stdChaine
             }
         }, function(error, response, body) {
-            if (!error && response.statusCode == 200) {
-                console.log(body);
-            } else {
+            if (error && response.statusCode != 200) {
                 console.error(response);
             }
         });
@@ -55,7 +53,6 @@ var getStdChaine = function(channel) {
 
         for (let str of channelTable) {
             lowerStr = str.toLowerCase();
-            console.log(lowerStr);
             if (lowerChannel == lowerStr) {
                 return c.stdValue;
             }
@@ -63,16 +60,6 @@ var getStdChaine = function(channel) {
 
     }
     return "none";
-    //var transformedChaine = chaine.replace(/\s/g, '');
-
-    //transformedChaine = transformedChaine.toLowerCase();
-
-
-    //if (chaine == "1" || chaine == "tf1") {
-    //    return "TF1";
-    //} else if (chaine == 6 || chaine == "m6") {
-    //    return "M6";
-    //}
 }
 
 module.exports = router;
