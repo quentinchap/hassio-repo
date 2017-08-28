@@ -52,9 +52,11 @@ var getStdChaine = function(channel) {
     var lowerChannel = channel.toLowerCase();
     console.log(lowerChannel);
     for (let c of options.channels) {
+        console.log(c);
 
         for (let str of c.compatibleValue) {
             lowerStr = str.toLowerCase();
+            console.log(lowerStr);
             if (lowerChannel == lowerStr) {
                 return c.stdValue;
             }
