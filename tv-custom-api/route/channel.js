@@ -53,7 +53,7 @@ var getStdChaine = function(channel) {
 
         for (let str of channelTable) {
             lowerStr = str.toLowerCase();
-            if (lowerStr.indexOf(lowerChannel) > -1) {
+            if (lowerChannel.indexOf(lowerStr) > -1) {
                 return c.stdValue;
             }
         }
