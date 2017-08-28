@@ -1,0 +1,18 @@
+{
+    "name": "nodeJs + express hass.io add-on example",
+    "version": "0.0.15",
+    "slug": "hassio-addon-example",
+    "hassio_api": "yes",
+    "description": "example to introduce hass.io add-on and nodeJs",
+    "startup": "before",
+    "boot": "auto",
+    "options": {
+        "name": "name"
+    },
+    "schema": {
+        "name": "str"
+    },
+    "ports": {
+        "3000/tcp": 3000
+    }
+}

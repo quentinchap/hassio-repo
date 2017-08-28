@@ -1,0 +1,43 @@
+{
+    "name": "channel API",
+    "version": "0.0.19",
+    "slug": "api_channel",
+    "description": "Allow to add possibilities for channel selection. Exemple: TF1 = 1 = tf1 = tf 1, etc.",
+    "startup": "before",
+    "boot": "auto",
+    "options": {
+        "key": "key",
+        "domain": "domain",
+        "homeAssistantPass": "pass",
+        "ssl": true,
+        "users": [
+            { "login": "test", "password": "test" }
+        ],
+        "channels": [{
+                "stdValue": "TF1",
+                "compatibleValue": ["1", "tf1", "tf 1"]
+            },
+            {
+                "stdValue": "M6",
+                "compatibleValue": ["6", "m6", "m 6"]
+            }
+        ]
+    },
+    "schema": {
+        "key": "str",
+        "domain": "str",
+        "homeAssistantPass": "str",
+        "ssl": "bool",
+        "users": [
+            { "login": "str", "password": "str" }
+        ],
+        "channels": [{
+            "compatibleValue": "str",
+            "stdValue": "str"
+        }]
+    },
+    "map": ["ssl:rw"],
+    "ports": {
+        "8245/tcp": 8245
+    }
+}

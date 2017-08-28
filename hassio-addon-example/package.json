@@ -1,0 +1,24 @@
+{
+  "name": "hassio-addon-example",
+  "version": "1.0.0",
+  "description": "Hass.io add-on build with nodeJS and express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quentinchap/hassio-addon-example.git"
+  },
+  "author": "CHAPELLE Quentin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quentinchap/hassio-addon-example/issues"
+  },
+  "homepage": "https://github.com/quentinchap/hassio-addon-example#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "request": "^2.81.0"
+  }
+}
