@@ -1,6 +1,6 @@
 {
     "name": "channel api",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "slug": "api_channel",
     "description": "Allow to add possibilities for channel selection. Exemple: TF1 = 1 = tf1 = tf 1, etc.",
     "startup": "before",
