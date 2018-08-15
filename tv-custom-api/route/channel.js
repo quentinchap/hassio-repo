@@ -34,7 +34,7 @@ router.post('/', function(req, res) {
                 "source": stdChaine
             }
         }, function(error, response, body) {
-            if (error && response.statusCode != 200) {
+            if (error && response && response.statusCode != 200) {
                 console.error(response);
             }
         });
